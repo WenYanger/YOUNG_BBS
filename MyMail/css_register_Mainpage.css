@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+}
+
+.Container {
+	width: 956px;
+	margin: 0 auto;
+	position: relative;
+	
+	background-color:#03C;
+}
+
+.Banner {
+	background: url(image/register_banner.png) center top no-repeat;
+	height: 94px;
+}
+
+.Content {
+}
+

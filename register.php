@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+	<!--响应式布局-->
+    <!--桌面级CSS-->
+	<link type="text/css" rel="stylesheet" href="CSS/register_desktop.css" media="only screen and (min-width:480px)"/>
+    
+<script type="text/javascript" src="JS/CommonFunction.js"></script>
+</head>
+
+<body>
+<div id="Whole">
+	<div id="Banner">
+    	<div id="banner_text">
+    		<p>快速注册</p>
+        </div>
+    </div>
+    <form action="register.php" method="post" name="registerForm" enctype="multipart/form-data">
+        <div id="user_div">
+        	<label id="userTips">支持QQ号/邮箱/手机号注册</label>
+          <div id="userOuter">
+            <input name="user_input" type="text" id="user_input" size="30" maxlength="200" onKeyUp="check_hidden('user_input','userTips')" onKeyDown="check_hidden('user_input','userTips')">
+          </div>
+        </div>
+        <div id="password_div">
+        <label id="passwordTips">密码</label>
+          <div id="passOuter">
+            <input name="password_input" type="text" id="password_input" size="30" maxlength="200" onKeyUp="check_hidden('password_input','passwordTips')" onKeyDown="check_hidden('password_input','passwordTips')" >
+          </div>
+        </div>
+        <div id="password_div">
+        <label id="passwordTipsConfirm">确认密码</label>
+        	<div id="passOuter">
+            <input name="password_confirm" type="text" id="password_confirm" size="30" maxlength="200" onKeyUp="check_hidden('password_confirm','passwordTipsConfirm')" onKeyDown="check_hidden('password_confirm','passwordTipsConfirm')" >
+          </div>
+        </div>
+        <div id="loginButtonDiv">
+        	<div id="buttonOuter">
+         		<input name="submit" type="submit" id="loginButton" value="regist">
+            </div>
+        </div>
+    </form>
+</div>
+<?php
+require_once("SupportedFiles/Register.php");
+	switch($_POST["submit"]){
+		case 'regist':
+			$user_id = $_POST["user_input"];
+			$password = $_POST["password_input"];
+			$password_confirm = $_POST["password_confirm"];
+			if($user_id==''||$password==''||$password_confirm==''){
+				echo "<script>alert('账号/密码不能为空!');</script>";
+			} else {
+				switch(Register::regist($user_id,$password)){
+					case 402:
+						echo "<script>alert('数据库错误!');</script>";
+						break;
+					case 403:
+						echo "<script>alert('该用户已注册!');</script>";
+						break;
+					case 404:
+						echo "<script>alert('注册成功!');</script>";
+						break;
+					case 405:
+						echo "<script>alert('注册失败，服务器故障!');</script>";
+						break;
+					default:
+						break;
+				}
+			}
+		break;
+	}
+?>
+</body>
+</html>

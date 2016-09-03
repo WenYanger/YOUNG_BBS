@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-size:16px;
+	overflow:hidden;
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #Whole {
+ 	height:500px;
+	width:500px;
+	margin-top:20px;
+	margin-left: auto; 
+	margin-right: auto;
+	background:rgba(123,213,255,0.8);
+	border-radius:15px;
+	box-shadow:4px 2px 6px #333333; 
+ }
+ 
+ #Banner {
+	position:relative;
+	float:left;
+	width:500px;
+	height:120px;
+	background-color:#FFF;
+	border-radius:15px 15px 0 0;
+ }
+ #banner_text{
+	 width:350px;
+	height:120px;
+	margin-top:-28px;
+	margin-left: 115px;
+ }
+
+#Banner p{
+	font-size:24px;
+	line-height:1px;
+	letter-spacing:10px;
+	font: 60px "Microsoft YaHei";
+ }
+ 	
+#user_div {
+	position:relative;
+	float:left;
+	width:500px;
+	height:76px;
+	margin-top:20px;
+	margin-left: auto; 
+	margin-right: auto;
+	font: 15px "lucida Grande",Verdana,"Microsoft YaHei";
+}
+
+#user_input {
+	width:293px;
+	height:35px;
+	margin:0px 0 0 0px;
+	padding-left:20px;
+	
+	font-size:16px;
+	
+	border-radius:0.7em;
+	background:none;
+}
+
+#userTips {
+	position:absolute;
+	
+	display: block;
+	color:#999;
+	
+	top:31px;
+	left:112px;
+}
+
+#userOuter {
+	position:relative;
+	
+	width:320px;
+	height:40px;
+	margin-top:20px;
+	margin-left: auto; 
+	margin-right: auto;
+	
+}
+
+#password_div {
+	float:left;
+	position:relative;
+	
+	width:500px;
+	height:76px;
+}
+
+#password_input, #password_confirm {
+	width:293px;
+	height:35px;
+	margin:0px 0 0 0px;
+	padding-left:20px;
+	
+	font-size:16px;
+	
+	border-radius:0.7em;
+	background:none;
+}
+
+#passwordTips, #passwordTipsConfirm {
+	position:absolute;
+	
+	font: 15px "lucida Grande",Verdana,"Microsoft YaHei";
+	color:#999;
+	display: block;
+	top:31px;
+	left:112px;
+}
+
+#passOuter {
+	position:relative;
+	
+	width:320px;
+	height:40px;
+	margin-top:20px;
+	margin-left: auto; 
+	margin-right: auto;
+	
+	
+}
+#loginButtonDiv{
+	position:relative;
+	float:left;
+	width:500px;
+	height:76px;
+}
+#buttonOuter {
+	position:relative;
+	
+	width:320px;
+	height:40px;
+	margin-top:20px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+#loginButton {
+	position:relative;
+	width:325px;
+	height:47px;
+	
+	font-size:0px;
+	
+	
+	outline:none;
+	border:0;
+	
+	background-image:url(../image/login.png);
+}
+
+#loginButton:hover {
+	background-image:url(../image/login_hover.png);
+	cursor:pointer;
+}
+
+ 

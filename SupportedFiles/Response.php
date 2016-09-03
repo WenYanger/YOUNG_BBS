@@ -25,16 +25,13 @@ class Response{
 		
 		if($type == 'json'){
 			self::json($code,$message,$data);
-			exit;
 		} elseif($type == 'array') {
 			var_dump($result);
 		} elseif($type == 'xml'){
 			self::xml($code,$message,$data);
-			exit;
 		} else {
 			//TODO
 			self::json(0000,"Unsupported Response Format",nil);
-			exit;
 		}
 		
 	}
@@ -59,7 +56,6 @@ class Response{
 		);
 		
 		echo json_encode($result);
-		exit;
 	}
 	
 	/**
