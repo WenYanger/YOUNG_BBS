@@ -5,7 +5,7 @@ class Login{
 	static public function log_in($user_id,$password){
 		$connect = Db::getInstance()->connect();
 		if($connect){ 
-			$sql = "select * from User where user_id={$user_id}";
+			$sql = "select * from User where user_id='{$user_id}'";
 			$result = mysql_query($sql,$connect);
 			$info = mysql_fetch_array($result);
 			//一定要区分大小写，与数据库中的保持一致

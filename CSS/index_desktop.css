@@ -1,29 +1,24 @@
 @charset "UTF-8";
 /* CSS Document */
 body {
-	font-size:9px;
-	overflow:hidden;
+	font-size: 9px;
+	overflow: hidden;
 	margin: 0;
 	padding: 0;
- }
-
-.Whole {
-	
 }
-
+.Whole {
+}
 .Banner {
 	position: fixed;
-    _position: static;
-	left:0;
-	top:0;
-	right:0;
-    height: 62px;
-    zoom: 1;
-	
-    border-bottom: 1px solid #d6dfea;
-    background: #eff4fa;
+	_position: static;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 62px;
+	zoom: 1;
+	border-bottom: 1px solid #d6dfea;
+	background: #eff4fa;
 }
-
 .Banner_logo {
 	float: left;
 	width: 182px;
@@ -34,9 +29,8 @@ body {
 	background-size: 182px 35px;
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-image:url(../image/Banner_logo.png);
+	background-image: url(../image/Banner_logo.png);
 }
-
 .Banner_link {
 	overflow: hidden;
 	margin-top: 16px;
@@ -45,16 +39,13 @@ body {
 	text-align: right;
 	color: #b6b6b6;
 }
-
 .Body {
-	position:relative;
-	
+	position: relative;
 	margin: 70px auto;
-	height:610px;
-	
-	background-image:url(../image/background.png);
-	background-repeat:no-repeat;
-	background-position:center;
+	height: 610px;
+	background-image: url(../image/background.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 /*
 .Body_Login {
@@ -74,173 +65,125 @@ body {
 }*/
 
 .Body_Login {
-	float:right;
-	
-	margin:50px 120px auto auto;
-	
-	width:380px;
-	height:400px;
-	
-	
-	font: 15px "lucida Grande",Verdana,"Microsoft YaHei";
-	
-	background-color:rgba(255,255,255,0.9);
+	float: right;
+	margin: 50px 120px auto auto;
+	width: 380px;
+	height: 400px;
+	font: 15px "lucida Grande", Verdana, "Microsoft YaHei";
+	background-color: rgba(255,255,255,0.9);
 	border: 1px solid #d6dfea;
-	border-radius:0.5em;
+	border-radius: 0.5em;
 }
-               
 .Bottom {
 	position: fixed;
 	_position: static;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 2;      
+	z-index: 2;
 	line-height: 36px;
-	
 	text-align: center;
-	color:#b6b6b6;
-	font-family:"Microsoft YaHei";
-	
+	color: #b6b6b6;
+	font-family: "Microsoft YaHei";
 	background-color: #eff4fa;
 	border-top: 1px solid #d6dfea;
 }
-
 .Bottom a {
-	color:#03C;
+	color: #03C;
 }
-
 .OtherButton {
-	margin:85px 0px 10px auto;
-	
-	width:220px;
-	height:25px;
-	
-	font-size:12px;
-	font-family:"Microsoft YaHei";
-	font-weight:100;
-	color:#06F;
+	margin: 85px 0px 10px auto;
+	width: 220px;
+	height: 25px;
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+	font-weight: 100;
+	color: #06F;
 }
-
-a:link { 
-	text-decoration: none; 
-} 
-a:visited { 
-	text-decoration: none; 
-} 
-a:hover { 
-    text-decoration: underline;
-} 
-a:active { 
-	text-decoration: none; 
-} 
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
 a {
-	color:#03F;
+	color: #03F;
 }
-	
 #user_div {
-	position:relative;
-	
-	width:360px;
-	height:76px;
-	
-	margin:40px 0 0 10px;
+	position: relative;
+	width: 360px;
+	height: 76px;
+	margin: 40px 0 0 10px;
 }
-
 #user_input {
-	width:293px;
-	height:35px;
-	margin:0px 0 0 0px;
-	padding-left:20px;
-	
-	font-size:16px;
-	
-	border-radius:0.7em;
-	background:none;
+	width: 293px;
+	height: 35px;
+	margin: 0px 0 0 0px;
+	padding-left: 20px;
+	font-size: 16px;
+	border-radius: 0.7em;
+	background: none;
+	border: rgba(153,153,153,0.8) solid 2px;
 }
-
 #userTips {
-	position:absolute;
-	
-	
-	color:#999;
-	
-	top:31px;
-	left:45px;
+	position: absolute;
+	color: #999;
+	top: 31px;
+	left: 45px;
 }
-
 #userOuter {
-	position:absolute;
-	
-	width:320px;
-	height:40px;
-	margin:20px 0 0 20px;
-	
-	
+	position: absolute;
+	width: 320px;
+	height: 40px;
+	margin: 20px 0 0 20px;
 }
-
 #password_div {
-	position:relative;
-	
-	width:360px;
-	height:76px;
-	
-	margin:0px 0 0 10px;
+	position: relative;
+	width: 360px;
+	height: 76px;
+	margin: 0px 0 0 10px;
 }
-
 #password_input {
-	width:293px;
-	height:35px;
-	margin:0px 0 0 0px;
-	padding-left:20px;
-	
-	font-size:16px;
-	
-	border-radius:0.7em;
-	background:none;
+	width: 293px;
+	height: 35px;
+	margin: 0px 0 0 0px;
+	padding-left: 20px;
+	font-size: 16px;
+	border-radius: 0.7em;
+	background: none;
+	border: rgba(153,153,153,0.8) solid 2px;
 }
-
 #passwordTips {
-	position:absolute;
-	
-	font: 15px "lucida Grande",Verdana,"Microsoft YaHei";
-	color:#999;
-	
-	top:31px;
-	left:45px;
+	position: absolute;
+	font: 15px "lucida Grande", Verdana, "Microsoft YaHei";
+	color: #999;
+	top: 31px;
+	left: 45px;
 }
-
 #passOuter {
-	position:absolute;
-	
-	width:320px;
-	height:40px;
-	margin:20px 0 0 20px;
-	
-	
+	position: absolute;
+	width: 320px;
+	height: 40px;
+	margin: 20px 0 0 20px;
 }
-
 #loginButton {
-	position:relative;
-	
-	width:325px;
-	height:47px;
-	margin:40px 0 0 25px;
-	
-	font-size:0px;
-	
-	
-	outline:none;
-	border:0;
-	
-	background-image:url(../image/login.png);
+	position: relative;
+	width: 325px;
+	height: 47px;
+	margin: 40px 0 0 25px;
+	font-size: 0px;
+	outline: none;
+	border: 0;
+	background-image: url(../image/login.png);
 }
-
 #loginButton:hover {
-	background-image:url(../image/login_hover.png);
-	cursor:pointer;
+	/*background-image:url(../image/login_hover.png);*/
+	opacity: 0.8;
+	cursor: pointer;
 }
-
-
-
-

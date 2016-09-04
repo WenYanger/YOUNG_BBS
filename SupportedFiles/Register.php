@@ -27,7 +27,7 @@ class Register{
 	static public function checkUserAvailability($user_id){
 		$connect = Db::getInstance()->connect();
 		if($connect){ 
-			$sql = "select * from User where user_id={$user_id}";
+			$sql = "select * from User where user_id='{$user_id}'";
 			$result = mysql_query($sql,$connect);
 			$number = mysql_fetch_row($result);
 			if($number==0){
