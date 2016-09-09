@@ -38,10 +38,22 @@ body {
 	bottom: 0;
 	width: 300px;
 	zoom: 1;
-	background-color:rgba(255,255,255,0.2);
+	background-color: rgba(0,0,0,0.4);
+}
+.ContentLeft_blur{
+	position: fixed;
+	_position: static;
+	left: -250px;
+	top: 62px;
+	bottom: 0;
+	width: 300px;
+	zoom: 1;
+	background:inherit;
+	opacity:0.5;
+	filter: blur(5px);
 }
 .ContentLeft_userDiv {
-	float:left;
+	float: left;
 	width: 300px;
 	height: 200px;
 }
@@ -49,54 +61,96 @@ body {
 	position: relative;
 	height: 100px;
 	width: 100px;
-	margin-top:40px;
+	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius:50px;
+	border-radius: 50px;
 }
-#ContentLeft_userPicture img{
-	height:100%;
-	width:100%;
-	border-radius:50px;
+#ContentLeft_userPicture img {
+	height: 100%;
+	width: 100%;
+	border-radius: 50px;
 }
-#ContentLeft_userInfo{
+#ContentLeft_userInfo {
 	position: relative;
 	height: 40px;
 	width: 200px;
-	margin-top:5px;
+	margin-top: 5px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align:center;
+	text-align: center;
 }
-#ContentLeft_userInfo p{
-	color:rgba(255,255,255,1);
+#ContentLeft_userInfo p {
+	color: rgba(255,255,255,1);
 	font: 18px "lucida Grande", Verdana, "Microsoft YaHei";
 }
-.ContentLeft_functionSelectDiv{
-	float:left;
+.ContentLeft_functionSelectDiv {
+	float: left;
 	width: 300px;
-	height:500px;
-	top:0;
-	left:0;
-	bottom:0;
+	height: 500px;
+	top: 0;
+	left: 0;
+	bottom: 0;
 }
-.ContentLeft_functionSelectDiv ul li{
-	list-style-type:none;
+/*
+.ContentLeft_functionSelectDiv ul li {
+	list-style-type: none;
 }
-.ContentLeft_functionSelectDiv ul li a{
-	display:block;
-	width:300px;
-	height:40px;
-	margin-left:-40px;
-	margin-top:5px;
-	padding-top:15px;
-	text-decoration:none;
-	text-align:center;
+.ContentLeft_functionSelectDiv ul li a {
+	display: block;
+	width: 300px;
+	height: 40px;
+	margin-left: -40px;
+	margin-top: 5px;
+	padding-top: 15px;
+	text-decoration: none;
+	text-align: center;
 	font: 18px "lucida Grande", Verdana, "Microsoft YaHei";
-	color:rgba(255,255,255,1);
+	color: rgba(255,255,255,1);
 }
-.ContentLeft_functionSelectDiv ul li a:hover{
-	background-color:rgba(255,255,255,0.4);
+.ContentLeft_functionSelectDiv ul li a:hover {
+	background-color: rgba(255,255,255,0.4);
 }
+*/
+.ContentLeft_functionSelectDiv ul li {
+	display: block;
+	width: 300px;
+	height: 40px;
+	margin-left: -40px;
+	margin-top: 5px;
+	padding-top: 15px;
+	text-decoration: none;
+	text-align: center;
+	font: 18px "lucida Grande", Verdana, "Microsoft YaHei";
+	color: rgba(255,255,255,1);
+	list-style-type: none;
+}
+.ContentLeft_functionSelectDiv ul li:hover {
+	background-color: rgba(255,255,255,0.4);
+}
+.ContentLeft_functionSelectDiv ul li a {
+	display: block;
+	width: 300px;
+	height: 40px;
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+.ContentLeft_specificFunction{
+	width: 300px;
+	height: 40px;
+	display:none;
+	margin-top:-10px;
+	opacity:0;
+	background-color:rgba(0,51,204,1);
+}
+
 .ContentRight {
+	position: fixed;
+	_position: static;
+	left: 50px;
+	top: 62px;
+	bottom: 0;
+	right:0px;
+	zoom: 1;
+	border:1px solid rgba(153,0,102,1);
 }

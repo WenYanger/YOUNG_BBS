@@ -10,12 +10,57 @@
 <script>
 window.onload = function(){
 	var c = document.getElementsByClassName('ContentLeft')[0];
+	var d = document.getElementsByClassName('ContentLeft_blur')[0];
 	c.onmouseover = function(){
 		startMove(this,{'left':0});
+		startMove(d,{'left':0});
 	}
 	c.onmouseout = function(){
 		startMove(this,{'left':-250});
+		startMove(d,{'left':-250});
 	}
+	
+	var aLi = document.getElementsByTagName('li');
+	for(var i = 0; i<aLi.length; i++){
+		if(i==aLi.length){i=aLi.length-1;}
+		aLi[i].onmouseover = function(){
+			if(i==aLi.length){i=aLi.length-1;}
+			startMove(this,{'height':60,'padding-top':30});
+		}
+		aLi[i].onmouseout = function(){
+			if(i==aLi.length){i=aLi.length-1;}
+			startMove(this,{'height':40,'padding-top':0});
+		}
+	}
+	/*
+	var aLi = document.getElementsByTagName('li');
+	var tank = new Array({'start':0,'end':1},{'start':2,'end':3},{'start':4,'end':5},{'start':6,'end':7});//存储各具体函数子节点的起始index与结束index
+	for(var i = 0; i<aLi.length; i++){
+		if(i==aLi.length){i=aLi.length-1;}
+		aLi[i].onmouseover = function(){
+			if(i==aLi.length){i=aLi.length-1;}
+			startMove(this,{'height':200});
+			var specFuncs = document.getElementsByClassName('ContentLeft_specificFunction');
+			for(var j = tank[i].start; j<=tank[i].end; j++){
+				
+				var s = specFuncs[j];
+				s.style.display = 'block';
+				//s.style.opacity = '1';
+				startMove(s,{'opacity':100,'margin-top':10});
+			}
+		}
+		aLi[i].onmouseout = function(){
+			if(i==aLi.length){i=aLi.length-1;}
+			startMove(this,{'height':40});
+			var specFuncs = document.getElementsByClassName('ContentLeft_specificFunction');
+			for(var j = tank[i].start; j<=tank[i].end; j++){
+				var s = specFuncs[j];
+				//s.style.opacity = '1';
+				startMove(s,{'opacity':0,'margin-top':-10});
+			}
+		}
+	}
+	*/
 }
 
 </script>
@@ -25,22 +70,38 @@ window.onload = function(){
 <div class="Whole">
   <div class="Banner"> </div>
   <div class="Content">
+    <div class="ContentRight">
+    	<p style="font-size:36px;">fadfasdfasdfaf</p>
+     </div>
     <div class="ContentLeft">
       <div class="ContentLeft_userDiv">
-        <div id="ContentLeft_userPicture"> 
-        	<img src="image/user_defaultImage.jpg">
-        </div>
+        <div id="ContentLeft_userPicture"> <img src="image/user_defaultImage.jpg"> </div>
         <div id="ContentLeft_userInfo">
-        	<p>User</p>
+          <p>User</p>
         </div>
       </div>
       <div class="ContentLeft_functionSelectDiv">
         <ul>
-          <li><a href="http://www.baidu.com">我的发帖</a></li>
-          <li><a href="http://www.baidu.com">消息</a></li>
+          <li><a href="http://www.baidu.com">我的发帖</a>
+            <div class="ContentLeft_specificFunction"></div>
+            <div class="ContentLeft_specificFunction"></div>
+          </li>
+          <li><a href="http://www.baidu.com">消息</a>
+            <div class="ContentLeft_specificFunction"></div>
+            <div class="ContentLeft_specificFunction"></div>
+          </li>
+          <li><a href="http://www.baidu.com">消息</a>
+            <div class="ContentLeft_specificFunction"></div>
+            <div class="ContentLeft_specificFunction"></div>
+          </li>
+          <li><a href="http://www.baidu.com">消息</a>
+            <div class="ContentLeft_specificFunction"></div>
+            <div class="ContentLeft_specificFunction"></div>
+          </li>
         </ul>
       </div>
     </div>
+    
   </div>
 </div>
 </body>

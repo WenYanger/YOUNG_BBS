@@ -54,7 +54,8 @@ require_once("SupportedFiles/Login.php");
 				} else {
 					switch(Login::log_in($user_id,$password)){
 						case 400:
-							echo "<script>alert('Login Success!');</script>";
+							$url = './main.php';
+							echo ("<script>window.location.href=('".$url."');</script>");
 							break;
 						case 401:
 							echo "<script>alert('Login Fail!');</script>";

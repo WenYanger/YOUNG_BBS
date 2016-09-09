@@ -6,7 +6,6 @@ function startMove(obj, json, fn){
 	clearInterval(obj.timer);
 	obj.timer = setInterval(function(){
 		for(var attr in json){
-			console.log(flag);
 			//1.计算当前值
 			var cur_value = 0;
 			if(attr == 'opacity'){
